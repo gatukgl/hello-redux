@@ -12,8 +12,9 @@ const initialState = { counter: 100 }
 const store = createStore(
   rootReducer,
   initialState,
+  // solve enhancer
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-) // will create a store in root
+)
 
 if (module.hot) {
   module.hot.accept('./reducers', () => {
