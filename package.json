@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel -d dist src",
     "start": "node dist/index.js",
-    "dev": "webpack-dev-server --inline",
+    "dev": "webpack-dev-server --inline --hot",
     "webpack": "webpack",
     "webpack:watch": "webpack --watch"
   },
@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0"
   }
 }
